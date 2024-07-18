@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="container-header">
+            <div id="user"><img src="imagens/foto-de-perfil.png" alt=""></div>       
+            <div id="msg"><img src="imagens/mensagem.png" alt=""></div>
+            <div id="notify"><img src="imagens/notificar.png" alt=""></div>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="menu-a">Projetos</a>
+
+                            <div class="dropdown-menu">
+                                <a href="/aba-projetos/buscar-projetos.html">Buscar projetos</a>
+                                <a href="#">Gerenciar projetos</a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="menu-a">Finanças</a>
+
+                            <div class="dropdown-menu">
+                                <a href="#">Faturamento</a>
+                                <a href="#">Transações</a>
+                                <a href="#">Opções de pagamento</a>
+                                <a href="#">Cartões de crédito</a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="menu-a">Ajuda</a>
+
+                            <div class="dropdown-menu">
+                                <a href="#">Guias</a>
+                                <a href="#">Central de Ajuda</a>
+                                <a href="#">Sobre o Starfreela</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="search-box">
+                <input type="text" id="search-txt" placeholder="Pesquisar">
+                <a href="#" id="search-btn">
+                    <img src="imagens/arrow-down.png" alt="Lupa" height="10" width="10" style="margin-right: 5px;">
+                </a>
+            </div>
+
+            <div id="logo">
+                <h1>Starfreela</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="container-painel-control">
+            <div id="container-painel">
+                <div id="painel">
+                    <div class="painel-imgs">
+                        <img src="imagens/aviaozinho.png" alt="Aviãozinho" width="35">
+                        <div class="painel-txt">
+                            <h5>Propostas enviadas</h5> 
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="painel-imgs">
+                        <img src="imagens/bandeira.png" alt="Bandeira" width="35">
+                        <div class="painel-txt">
+                            <h5>Projetos em execução</h5> 
+                            <p>0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="starcoins-painel">
+                    <div class="control-starcoins">
+                        <h5>Starcoins extras</h5>
+                        <p>0 starcoins disponíveis</p>
+                    </div>
+
+                    <div class="control-starcoins">
+                        <div id="starcoins-sem">
+                            <h5>Starcoins semanais</h5>
+                            <a title="Essas conexões serão renovadas em 7 dias."><img src="imagens/question.png" alt="Questão" width="15"></a>
+                        </div>
+                        <p>20/20 starcoins semanais disponíveis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container-user">
+                <div id="profile">
+                    <img src="imagens/user.png" width="40" height="40" alt="foto-de-perfil">
+                    <div id="type-user">
+                        <p>Membro Comum</p>
+                        <h4>Nome de usuário</h4>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"></label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="profile-progress">
+                    <h4>Perfil preenchido: </h4>
+                    <div id="container-progress-bar">
+                        <div id="progress-bar">
+                            <div id="progress"></div>
+                        </div>
+
+                        <div id="percentage">
+                            <p>25%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container-saldo-and-recommendations">
+            <div id="container-saldo">
+                <div id="method-pay">
+                    <p>Método de cobrança</p>
+                    <div></div>
+                </div>
+
+                <div id="saldo-disp">
+                    <p>Saldo disponível</p>
+                    <h1>R$ 0,00</h1>
+                </div>
+
+                <div id="saldo-work">
+                    <a href="#" class="saldo-work-btn">Sacar</a>
+                    <a href="#" class="saldo-work-btn">Buscar trabalho</a>
+                </div>
+            </div>
+
+            <div id="container-recommendations">
+                <div id="head-painel-projects">
+                    <h4>Projetos recentes que podem te interessar</h4>
+                    <nav>
+                        <li>Programação</li>
+                        <li>Design Gráfico</li>
+                        <li>Tradução e Conteúdos</li>
+                        <li>Vídeos e Animação</li>
+                        <li><img src="imagens/arrow-down.png" alt="Seta-para-baixo" height="10" width="10" style="margin-right: 5px;"></li>
+                    </nav>
+                </div>
+
+                <div id="body-projects">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div id="footer-projects">
+                    <div class="page-buttons">
+                        <button class="next-button">&#8249;</button>
+                        <button class="page-button">1</button>
+                        <button class="page-button">2</button>
+                        <button class="page-button">3</button>
+                        <button class="page-button">4</button>
+                        <button class="next-button">&#8250;</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Em Desenvolvimento | Por: Ruan &#169;</p>
+        </div>
+    </footer>
+</body>
+</html>

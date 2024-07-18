@@ -1,0 +1,246 @@
+/* Viewport de propostas e starcoins */
+#container-painel {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    height: 28%;
+    border: 1px solid #000000;
+}
+
+.painel-imgs {
+    width: 200px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.painel-txt {
+    margin-left: 10px;
+}
+
+.painel-txt p {
+    font-size: 13px;
+}
+
+#starcoins-painel {
+    margin-top: 25px;
+}
+
+#starcoins-sem {
+    display: flex;
+}
+
+#starcoins-sem img {
+    margin-left: 4px;
+}
+
+.control-starcoins p {
+    display: flex;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* Sobre o usuário */
+#container-user {
+    margin-top: 40px;
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#profile {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#type-user {
+    margin-left: 10px;
+}
+
+#type-user p {
+    font-size: 14px;
+}
+/* Avaliação do perfil */
+.rating {
+    display: inline-block;
+  }
+  
+.rating input {
+    display: none;
+}
+  
+.rating label {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 26px;
+}
+  
+.rating label:before {
+    content: '\2605';
+    color: #ccc;
+}
+  
+.rating input:checked ~ label:before {
+    color: #ffcc00;
+}
+  
+.rating label:hover:before,
+.rating label:hover ~ label:before {
+    color: #ffcc00;
+}
+  
+.rating {
+    direction: rtl; /* Define a direção da escrita da direita para a esquerda */
+}
+
+/* Barra de progresso */
+#profile-progress h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#container-progress-bar {
+    display: flex;
+    align-items: center;
+}
+
+#progress-bar {
+    width: 75%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+#progress {
+    width: 25%;
+    height: 100%;
+    background-color: #00d7a7;
+}
+  
+#percentage {
+    margin-left: 5px;
+}
+
+/* Mostrar valor faturado */
+#container-saldo {
+    display: flex;
+    margin-left: 85px;
+    background-color: #fff;
+    border: 1px solid #000000;
+    padding: 30px;
+    width: 51.5vw;
+    flex-grow: 1;
+}
+
+#saldo-work {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#saldo-disp {
+    margin-left: 5%;
+}
+
+.saldo-work-btn {
+    background-color: #00d7a7;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.saldo-work-btn:hover {
+    background-color: #03c299;
+}
+
+#method-pay div {
+    width: 100px;
+    height: 35px;
+    background-color: #83828240;
+}
+
+/* Projetos recomendados */
+#container-recommendations {
+    width: 51.5vw;
+    margin-top: 25px;
+    margin-left: 85px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #000000;
+}
+
+#head-painel-projects h4 {
+    text-align: center;
+    background-color: #76757544;
+    padding: 5px;
+}
+
+#head-painel-projects nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color: #ededed;
+}
+
+#head-painel-projects nav li {
+    font-size: 13px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#body-projects {
+    padding: 20px;
+}
+
+#body-projects div {
+    background-color: #e2e1e1;
+    padding: 10px;
+    height: 7em;
+    margin-top: 20px;
+}
+
+/* Estilos para os botões de página */
+.page-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.page-button {
+    margin-left: 5px;
+    padding: 8px 13px;
+    background-color: #00d7a7;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-button:hover {
+    background-color: #03c299;
+}
+
+.next-button {
+    font-weight: bolder;
+    margin-left: 5px;
+    padding: 8px 13px;
+    background-color: #fff;
+    border-color: #00d7a7;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.next-button:hover {
+    background-color: #00d7a82f;
+}

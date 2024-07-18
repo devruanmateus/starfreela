@@ -1,0 +1,177 @@
+/* Configurações gerais */
+
+/* Cabeçário */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#container-header {
+    max-width: 1080px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #00d7a7;
+    box-shadow: 5px 0px 6px #00000047;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+#user img, #msg img, #notify img {
+    margin-left: 10px;
+    width: 27px;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 14px;
+    z-index: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+#menu, #search-box {
+    width: 50%;
+}
+
+.menu-a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.menu-a:hover {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+/* Dropdown de abas recomendadas */
+.dropdown {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    width: 13em;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.149);
+    background-color: rgba(5, 177, 140, 0.929);
+    border-radius: 1px 1px 5px 5px;
+    display: none;
+}
+
+.dropdown-menu a {
+    font-size: 15px;
+    color: #fff;
+    padding: 12px 20px; /* Reduzindo o padding horizontal */
+    text-decoration: none;
+    display: block; /* Para garantir que os links ocupem a largura total do menu */
+}
+
+.dropdown-menu a:hover {
+    background-color: #02a683;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .menu-a {
+    background-color: #e0e0e0;
+}
+/* Estilos para as opções adicionais */
+
+#search-box {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    align-items: center;
+    color: #fff;
+}
+
+#search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    margin-left: 5px;
+    width: 325px;
+}
+
+#search-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Posicionamento do conteúdo principal */
+body {
+    background-color: #f5f5f5;
+}
+
+main {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+    padding: 40px;
+    margin-top: 20px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    background-color: #ECECEC;
+    height: 120px;
+}
+
+footer div p {
+    margin: auto;
+    color: rgba(0, 0, 0, 0.499);
+}

@@ -1,0 +1,109 @@
+/* Área de configurar o status */
+#stats {
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: #fff;
+    width: 255px;
+    height: 300px;
+    padding: 25px;
+}
+
+#iselect-status {
+    margin-top: 10px;
+    padding: 15px;
+    padding-left: 15px;
+    font-size: 13px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+.select-container select {
+    -webkit-appearance: none;  /* Safari e Chrome */
+    -moz-appearance: none;     /* Firefox */
+    appearance: none;          /* Padrão */
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    background-color: white;
+    padding-right: 30px;  /* Ajuste para dar espaço para a seta */
+    width: 100%;
+}
+  
+.select-container::after {
+    content: '\21B7'; /* Código Unicode para a seta */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* A seta não interfere na seleção */
+}
+
+/* Projetos */
+#projects-view-container {
+    margin-top: 55px;
+    margin-left: 85px;
+    background-color: #ECECEC;
+    padding: 20px;
+}
+
+#box-project {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    width: 720px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#box-project {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#info-project {
+    flex: 7;
+}
+
+#info-project p {
+    margin-top: 7px;
+}
+
+#stats-project {
+    text-align: left; /* Alinha o conteúdo à esquerda */
+    flex: 1;
+}
+
+#info-cliente {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#info-cliente p {
+    position: absolute;
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+#info-client img {
+    position: relative;
+    float: right;
+}
+
+#stats-project #status {
+    border: 2px solid rgb(216, 216, 12);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: rgb(216, 216, 12);
+
+}

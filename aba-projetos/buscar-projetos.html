@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starfreela</title>
+    <link rel="stylesheet" href="buscar-projetos.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div id="container-header">
+            <div id="user"><img src="../imagens/foto-de-perfil.png" alt=""></div>       
+            <div id="msg"><img src="../imagens/mensagem.png" alt=""></div>
+            <div id="notify"><img src="../imagens/notificar.png" alt=""></div>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" id="menu-projetos" class="menu-a">Projetos</a>
+
+                            <div class="dropdown-menu">
+                                <a href="buscar-projetos.html">Buscar projetos</a>
+                                <a href="#">Gerenciar projetos</a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="menu-a">Finanças</a>
+
+                            <div class="dropdown-menu">
+                                <a href="#">Faturamento</a>
+                                <a href="#">Transações</a>
+                                <a href="#">Opções de pagamento</a>
+                                <a href="#">Cartões de crédito</a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="menu-a">Ajuda</a>
+
+                            <div class="dropdown-menu">
+                                <a href="#">Guias</a>
+                                <a href="#">Central de Ajuda</a>
+                                <a href="#">Sobre o Starfreela</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="search-box">
+                <input type="text" id="search-txt" placeholder="Pesquisar">
+                <a href="#" id="search-btn">
+                    <img src="../imagens/arrow-down.png" alt="Lupa" height="10" width="10" style="margin-right: 5px;">
+                </a>
+            </div>
+
+            <div id="logo">
+                <h1>Starfreela</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="filtro-container">
+            <h5>Categorias</h5>
+            <div id="categorias">
+                <form action="" method="post">
+                    <ul>
+                        <li class="lista-categorias">
+                            <input type="checkbox" name="design" id="idesign">
+                            <label for="idesign">Design e Artes</label>
+                        </li>
+                        <li class="lista-categorias">
+                            <input type="checkbox" name="fotografia" id="ifotografia">
+                            <label for="ifotografia">Fotografia</label>
+                        </li>
+                        <li class="lista-categorias">
+                            <input type="checkbox" name="escrita" id="iescrita">
+                            <label for="iescrita">Tradução e escrita</label>
+                        </li>
+                        <li class="lista-categorias">
+                            <input type="checkbox" name="programacao" id="iprogramacao">
+                            <label for="iprogramacao">Programacao e TI</label>
+                        </li>
+                        <li class="lista-categorias">
+                            <input type="checkbox" name="suporte" id="isuporte">
+                            <label for="isuporte">Suporte Administrativo</label>
+                        </li>
+                        <li class="lista-categorias">
+                            <input type="checkbox" name="contabilidade" id="icontabilidade">
+                            <label for="icontabilidade">Contabilidade</label>
+                        </li>
+                        <li class="lista-categorias">
+                            <input type="checkbox" name="juridico" id="ijuridico">
+                            <label for="ijuridico">Jurídico</label>
+                        </li>
+                        <li class="lista-categorias">
+                            <input type="checkbox" name="financas" id="ifinancas">
+                            <label for="ifinancas">Finanças e Administração</label>
+                        </li>
+                        <li class="lista-categorias">
+                            <input type="checkbox" name="marketing" id="imarketing">
+                            <label for="imarketing">Vendas e Marketing</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <div id="modalidades">
+                <h5>Modalidade do trabalho</h5>
+                <form action="" method="post">
+                    <select name="modal" id="imodal">
+                        <option value="Todas">Todas</option>
+                        <option value="Fixo">Fixo</option>
+                        <option value="Hora">Por hora</option>
+                    </select>
+                </form>
+            </div>
+
+            <div id="idioma">
+                <h5>Idioma</h5>
+                <form action="" method="post">
+                    <select name="linguagem" id="ilinguagem">
+                        <option value="PTBR">Português</option>
+                        <option value="ES">Espanhol (Indisponível)</option>
+                        <option value="EN">Inglês (Indisponível)</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <div id="projetos-container">
+            <h4>Data de publicação</h4>
+            <form action="" method="post">
+                <select name="data-publi" id="idata-publi">
+                    <option value="24h">Nas últimas 24 horas</option>
+                    <option value="3d">Nos últimos 3 dias</option>
+                    <option value="7d">Desde semana passada</option>
+                    <option value="30d">Nesse mês</option>
+                </select>
+            </form>
+
+            <div id="caixa-projetos">
+                <div>
+                    <div id="titulo-do-post">
+                        <h2 tabindex="0"><a href="#">Título</a></h2>
+                        <img src="../imagens/ceta-para-cima.png" alt="Acessar o post" width="17">
+                    </div>
+                    <p id="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error ea autem quidem tempora repellat mollitia nisi facilis 
+                        ratione modi maxime aliquid dicta omnis, necessitatibus cumque 
+                        blanditiis eum consectetur doloribus explicabo.</p>
+                    <div id="cliente">
+                        <img src="../imagens/user.png" alt="Foto do cliente">
+                        <h5>Cliente</h5>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="caixa-projetos">
+                <div>
+                    <div id="titulo-do-post">
+                        <h2 tabindex="0"><a href="#">Título</a></h2>
+                        <img src="../imagens/ceta-para-cima.png" alt="Acessar o post" width="17">
+                    </div>
+                    <p id="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error ea autem quidem tempora repellat mollitia nisi facilis 
+                        ratione modi maxime aliquid dicta omnis, necessitatibus cumque 
+                        blanditiis eum consectetur doloribus explicabo.</p>
+                    <div id="cliente">
+                        <img src="../imagens/user.png" alt="Foto do cliente">
+                        <h5>Cliente</h5>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </main>
+    <footer>
+        <div>
+            <p>Em Desenvolvimento | Por: Ruan &#169;</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="gerenciarprojetos.css">
+</head>
+<body>
+    <header>
+        <div id="container-header">
+            <div id="user"><img src="../imagens/foto-de-perfil.png" alt=""></div>       
+            <div id="msg"><img src="../imagens/mensagem.png" alt=""></div>
+            <div id="notify"><img src="../imagens/notificar.png" alt=""></div>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="menu-a">Projetos</a>
+
+                            <div class="dropdown-menu">
+                                <a href="/aba-projetos/buscar-projetos.html">Buscar projetos</a>
+                                <a href="#">Gerenciar projetos</a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="menu-a">Finanças</a>
+
+                            <div class="dropdown-menu">
+                                <a href="#">Faturamento</a>
+                                <a href="#">Transações</a>
+                                <a href="#">Opções de pagamento</a>
+                                <a href="#">Cartões de crédito</a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="menu-a">Ajuda</a>
+
+                            <div class="dropdown-menu">
+                                <a href="#">Guias</a>
+                                <a href="#">Central de Ajuda</a>
+                                <a href="#">Sobre o Starfreela</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="search-box">
+                <input type="text" id="search-txt" placeholder="Pesquisar">
+                <a href="#" id="search-btn">
+                    <img src="../imagens/arrow-down.png" alt="Lupa" height="10" width="10" style="margin-right: 5px;">
+                </a>
+            </div>
+
+            <div id="logo">
+                <h1>Starfreela</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="config-container">
+            <h1>Minhas propostas</h1>
+            <div id="stats">
+                <h5>Status</h5>
+                <form action="" method="post">
+                    <div class="select-container">
+                        <select name="select-status" id="iselect-status">
+                            <option value="All">Todas</option>
+                            <option value="Analyze">Em análise</option>
+                            <option value="Accomplished">Realizado</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="projects-view-container">
+            <div id="box-project">
+                <div id="info-project">
+                    <h4>Título</h4>
+                    <p>Tipo: Preço Fixo</p>
+                    <p>Publicado: há 2 semanas</p>
+                </div>
+                <div id="stats-project">
+                    <p id="status">Status</p>
+                    <div id="info-cliente">
+                        <p>Cliente</p>
+                        <img src="../imagens/user.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="box-project">
+                <div id="info-project">
+                    <h4>Título</h4>
+                    <p>Tipo: Preço Fixo</p>
+                    <p>Publicado: há 2 semanas</p>
+                </div>
+                <div id="stats-project">
+                    <p id="status">Status</p>
+                    <div id="info-cliente">
+                        <p>Cliente</p>
+                        <img src="../imagens/user.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Em Desenvolvimento | Por: Ruan &#169;</p>
+        </div>
+    </footer>
+</body>
+</html>
