@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="gerenciarprojetos.css">
+    <link rel="stylesheet" href="faturamento.css">
 </head>
 <body>
     <header>
@@ -17,16 +17,16 @@
                 <nav>
                     <ul>
                         <li class="dropdown">
-                            <a href="#" class="menu-a">Projetos</a>
+                            <a href="#" id="menu-projetos" class="menu-a">Projetos</a>
 
                             <div class="dropdown-menu">
-                                <a href="/aba-projetos/buscar-projetos.html">Buscar projetos</a>
-                                <a href="gerenciarprojetos.html">Gerenciar projetos</a>
+                                <a href="../aba-projetos/buscar-projetos.html">Buscar projetos</a>
+                                <a href="../aba-projetos/gerenciarprojetos.html">Gerenciar projetos</a>
                             </div>
                         </li>
 
                         <li class="dropdown">
-                            <a href="#" class="menu-a">Finanças</a>
+                            <a href="#"  id="menu-financas" class="menu-a">Finanças</a>
 
                             <div class="dropdown-menu">
                                 <a href="#">Faturamento</a>
@@ -62,55 +62,39 @@
         </div>
     </header>
     <main>
-        <div id="config-container">
-            <div id="stats">
-                <h5>Status</h5>
-                <form action="" method="post">
-                    <div class="select-container">
-                        <select name="select-status" id="iselect-status">
-                            <option value="All">Todas</option>
-                            <option value="Analyze">Em análise</option>
-                            <option value="Accomplished">Realizado</option>
-                        </select>
-                    </div>
-                </form>
+        <div id="container-filter-faturamento">
+            <div id="filter-faturamento">
+                <div id="data">
+                    <h5>Data</h5>
+                    <input type="date" name="" id="">
+                    <input id="input-btn" type="date">
+                </div>
+
+                <div id="tipo">
+                    <h5>Tipo</h5>
+                    <button>Recebimentos</button>
+                    <button id="input-btn">Saques</button>
+                </div>
             </div>
 
-            <div id="projects-view-container">
-                <div id="box-project">
-                    <div id="info-project">
-                        <h4>Título</h4>
-                        <p>Tipo: Preço Fixo</p>
-                        <p>Publicado: há 2 semanas</p>
-                    </div>
-                    <div id="stats-project">
-                        <p id="status">Status</p>
-                        <div id="info-cliente">
-                            <p>Cliente</p>
-                            <img src="../imagens/user.png" alt="">
-                        </div>
-                    </div>
-                </div>
-    
-                <div id="box-project">
-                    <div id="info-project">
-                        <h4>Título</h4>
-                        <p>Tipo: Preço Fixo</p>
-                        <p>Publicado: há 2 semanas</p>
-                    </div>
-                    <div id="stats-project">
-                        <p id="status">Status</p>
-                        <div id="info-cliente">
-                            <p>Cliente</p>
-                            <img src="../imagens/user.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-
+            <table>
+                <thead>
+                    <th>Data</th>
+                    <th>Tipo</th>
+                    <th>Cliente</th>
+                    <th>Projeto</th>
+                    <th>Valor</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data</td>
+                        <td>Recebimento</td>
+                        <td>Junior</td>
+                        <td>15 artigos</td>
+                        <td>+R$ 75,00</td>
+                    </tr>
+                </tbody>
+            </table>
     </main>
     <footer>
         <div>
