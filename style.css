@@ -57,7 +57,7 @@ header {
 }
 
 #menu, #search-box {
-    width: 50%;
+    width: 100%;
 }
 
 .menu-a {
@@ -114,6 +114,45 @@ header {
 .dropdown:hover .menu-a {
     background-color: #e0e0e0;
 }
+
+/* Filtro de pesquisa - Projetos ou Freelancers */
+filtro-de-pesquisa {
+    list-style-type: none;
+    color: #333;
+    position: relative; /* Para posicionamento absoluto funcionar corretamente */
+}
+
+.selecionar-filtro-de-pesquisa {
+    width: 10em;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -130px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.149);
+    background-color: rgba(250, 249, 249, 0.77);
+    border-radius: 1px 1px 5px 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.filtro-de-pesquisa:hover .selecionar-filtro-de-pesquisa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.selecionar-filtro-de-pesquisa a:hover {
+    background-color: rgba(211, 211, 211, 0.23);
+}
+
+.selecionar-filtro-de-pesquisa a {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(68, 68, 68, 0.64);
+    padding: 8px 15px;
+    text-decoration: none;
+    display: block;
+}
+
 /* Estilos para as opções adicionais */
 
 #search-box {
