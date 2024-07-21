@@ -14,22 +14,22 @@ body {
 }
 
 #container-header {
-    max-width: 1080px;
     display: flex;
+    flex-flow: row nowrap;
+    max-width: 1080px;
     margin: 0 auto;
     align-items: center;
-    justify-content: center;
 }
 
 header {
     background-color: #00d7a7;
     box-shadow: 5px 0px 6px #00000047;
-    width: 100%;
     padding: 10px;
     margin-bottom: 40px;
 }
 
 #user img, #msg img, #notify img {
+    flex: auto;
     margin-left: 10px;
     width: 27px;
     cursor: pointer;

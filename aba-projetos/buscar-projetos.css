@@ -7,7 +7,8 @@
 }
 
 #filtro-container {
-    width: 350px;
+    display: flex;
+    flex-flow: column wrap;
     background-color: #fff;
     border: 1px solid #000000;
     padding: 30px;
@@ -31,6 +32,8 @@
 
 /* Publicações de projetos */
 #projetos-container {
+    display: flex;
+    flex-flow: column wrap;
     margin-left: 85px;
     background-color: #e2e1e17b;
     padding: 20px;

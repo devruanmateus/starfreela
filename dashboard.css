@@ -1,10 +1,17 @@
 /* Viewport de propostas e starcoins */
+#container-painel-control {
+    display: flex;
+    flex-flow: column wrap;
+}
+
 #container-painel {
-    display: inline-block;
+    display: flex;
+    flex-flow: row wrap;
     background-color: #fff;
     padding: 20px;
-    height: 28%;
+    height: 265px;
     border: 1px solid #000000;
+    margin-bottom: 25px;
 }
 
 .painel-imgs {
@@ -42,7 +49,8 @@
 
 /* Sobre o usuário */
 #container-user {
-    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
     background-color: #fff;
     border: 1px solid black;
     padding: 20px;
@@ -129,12 +137,11 @@
 /* Mostrar valor faturado */
 #container-saldo {
     display: flex;
+    flex-flow: row wrap;
     margin-left: 85px;
     background-color: #fff;
     border: 1px solid #000000;
     padding: 30px;
-    width: 51.5vw;
-    flex-grow: 1;
 }
 
 #saldo-work {
@@ -144,13 +151,13 @@
 }
 
 #saldo-disp {
-    margin-left: 5%;
+    margin-left: 35px;
 }
 
 .saldo-work-btn {
     background-color: #00d7a7;
     color: #fff;
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
     border: none;
     margin-right: 15px;
@@ -171,10 +178,11 @@
 
 /* Projetos recomendados */
 #container-recommendations {
+    display: flex;
+    flex-flow: column wrap;
     width: 51.5vw;
     margin-top: 25px;
     margin-left: 85px;
-    display: inline-block;
     background-color: #fff;
     border: 1px solid #000000;
 }

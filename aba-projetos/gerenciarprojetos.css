@@ -42,10 +42,16 @@
 
 /* Projetos */
 #config-container {
+    width: 100%;
     display: flex;
+    flex-direction: row;
 }
 
 #projects-view-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     margin-left: 85px;
     background-color: #ECECEC;
     padding: 20px;
@@ -55,7 +61,7 @@
     display: flex;
     background-color: #fff;
     padding: 20px;
-    width: 720px;
+    width: 100%;
     margin-bottom: 20px;
     border-radius: 5px;
 }
@@ -65,7 +71,6 @@
     justify-content: space-between;
     border: 1px solid #ccc;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 #info-project {
@@ -77,8 +82,18 @@
 }
 
 #stats-project {
-    text-align: left; /* Alinha o conteúdo à esquerda */
+    white-space: nowrap;
     flex: 1;
+}
+
+#stats-project > p {
+    padding: 5px 15px 5px 15px;
+    border: 1.5px solid rgb(216, 216, 12);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 13.5px;
+    margin-bottom: 15px;
+    color: rgb(216, 216, 12);
 }
 
 #info-cliente {
@@ -96,14 +111,4 @@
 #info-client img {
     position: relative;
     float: right;
-}
-
-#stats-project #status {
-    border: 1.5px solid rgb(216, 216, 12);
-    border-radius: 20px;
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 15px;
-    color: rgb(216, 216, 12);
-
 }
