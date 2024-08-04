@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starfreela</title>
+    <title>Cartões de Crédito - Starfreela</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="faturamento.css">
+    <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
@@ -30,10 +30,9 @@
                             <a href="#"  id="menu-financas" class="menu-a">Finanças</a>
 
                             <div class="dropdown-menu">
-                                <a href="#">Faturamento</a>
                                 <a href="#">Transações</a>
-                                <a href="#">Opções de pagamento</a>
-                                <a href="#">Cartões de crédito</a>
+                                <a href="payments.html">Opções de pagamento</a>
+                                <a href="cards.html">Cartões de crédito</a>
                             </div>
                         </li>
 
@@ -63,55 +62,10 @@
         </div>
     </header>
     <main>
-        <div id="container-filter-faturamento">
-            <div id="filter-faturamento">
-                <div id="data">
-                    <h5>Data</h5>
-                    <input type="date" name="" id="">
-                    <input id="input-btn" type="date">
-                </div>
-
-                <div id="tipo">
-                    <h5>Tipo</h5>
-                    <button>Recebimentos</button>
-                    <button id="input-btn">Saques</button>
-                </div>
-            </div>
-
-            <div id="table-container">
-                <table>
-                    <thead>
-                        <th>Data</th>
-                        <th>Tipo</th>
-                        <th>Cliente</th>
-                        <th>Projeto</th>
-                        <th>Valor</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="data-de-realizacao">21 de Jul de 2024</td>
-                            <td>Saque/Recebimentos</td>
-                            <td>Nome do cliente</td>
-                            <td>Nome do projeto</td>
-                            <td>+ R$ 75,00</td>
-                        </tr>
-                        <tr>
-                            <td id="data-de-realizacao">21 de Jul de 2024</td>
-                            <td>Saque/Recebimentos</td>
-                            <td>Nome do cliente</td>
-                            <td>Nome do projeto</td>
-                            <td>+ R$ 75,00</td>
-                        </tr>
-                        <tr>
-                            <td id="data-de-realizacao">21 de Jul de 2024</td>
-                            <td>Saque/Recebimentos</td>
-                            <td>Nome do cliente</td>
-                            <td>Nome do projeto</td>
-                            <td>+ R$ 75,00</td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
+        <div id="cards-container">
+            <div id="cardshead">
+                <h1>Cartões de Crédito</h1>
+                <p>Nenhum cartão de crédito cadastrado.</p>
             </div>
         </div>
     </main>

@@ -1,0 +1,13 @@
+/* Configurações do menu */
+#menu-financas {
+    background-color: #01bd94;
+}
+
+#menu-financas:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo da área de pagamentos */
+div#cardshead h1 {
+    margin-bottom: 20px;
+}
