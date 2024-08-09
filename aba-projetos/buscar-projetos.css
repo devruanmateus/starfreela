@@ -1,3 +1,10 @@
+@charset "UTF-8";
+
+/* Desativa os elementos da versão mobile */
+.html-mobile {
+    display: none;
+}
+
 #menu-projetos {
     background-color: #01bd94;
 }
@@ -95,4 +102,41 @@
 #cliente h5 {
     margin-left: 7px;
     margin-right: 10px;
+}
+
+/* Responsividade para pequenas telas */
+@media screen and (max-width: 868px) {
+    .html-desktop {
+        display: none;
+    }
+
+    .html-mobile {
+        display: block;
+    }
+
+    div#desktop-menu {
+        display: none;
+    }
+
+    /* Posicionando os containers */
+    main {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    div#projetos-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    #categories-vmobile {
+        border-radius: 7px;
+    }
+
+    div#filtro-container select {
+        padding: 5px; /* Ajuste conforme necessário */
+        
+    }
+
+    /* Estilo do filtro de projetos para celular */
 }
