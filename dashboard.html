@@ -121,32 +121,15 @@
                 </nav>
             </div>
 
-            <div id="search-box">
-                <input type="text" id="search-txt" placeholder="Pesquisar">
-
-                <menu>
-                    <ul>
-                        <li class="search-filter">
-                            <a href="#" id="search-btn">
-                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                            </a>
-
-                            <div class="select-filter">
-                                <a href="#">Projetos</a>
-                                <a href="#">Freelancers</a>
-                            </div>
-                        </li>
-                    </ul>
-                </menu>
-            </div>
-
             <div id="logotipo">
                 <h1>Starfreela</h1>
             </div>
         </div>
     </header>
     <main>
-        <div id="container-painel-control">
+
+        <!-- HTML para Desktop -->
+        <div class="html-desktop" id="container-painel-control">
             <div id="container-painel">
                 <div id="painel">
                     <h5 id="titlepanel">Progresso semanal</h5>
@@ -202,24 +185,48 @@
                             <label for="star1"></label>
                         </div>
                     </div>
+
+                    <div class="html-mobile" id="saldo-work-vmobile">
+                        <a href="#" class="saldo-work-btn">Sacar</a>
+                        <a href="#" class="saldo-work-btn">Jobs</a>
+                    </div>
+
+                    <div class="html-mobile" id="saldo-disp-vmobile">
+                        <p>Saldo disponível</p>
+                        <div>
+                            <h1>R$ 0,00</h1>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="profile-progress">
-                    <h4>Perfil preenchido: </h4>
-                    <div id="container-progress-bar">
-                        <div id="progress-bar">
-                            <div id="progress"></div>
+
+                <div class="html-tablet" id="painel-vmobile">
+                    <div id="info-painel-vmobile">                      
+                        <div class="control-starcoins">
+                            <h5>Starcoins extras</h5>
+                            <p>0 starcoins disponíveis</p>
                         </div>
     
-                        <div id="percentage">
-                            <p>25%</p>
+                        <div class="control-starcoins">
+                            <div id="starcoins-sem">
+                                <h5>Starcoins semanais</h5>
+                                <a title="Essas conexões serão renovadas em 7 dias."><img src="imagens/question.png" alt="Questão" width="15"></a>
+                            </div>
+                            <p>20/20 starcoins semanais disponíveis</p>
+                        </div>
+                    </div>
+
+                    <div class="html-tablet" id="saldo-disp-vmobile">
+                        <p>Saldo disponível</p>
+                        <div>
+                            <h1>R$ 0,00</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="container-saldo-and-recommendations">
+        <div class="html-desktop" id="container-saldo-and-recommendations">
             <div id="container-saldo">
                 <div id="method-pay">
                     <p>Método de cobrança</p>
@@ -269,8 +276,32 @@
 
             </div>
         </div>
-    </main>
 
+        <div class="html-mobile, html-tablet" id="container-recommendations-vmobile">
+            <nav id="filter-project">
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </nav>
+
+            <div id="body-projects-vmobile">
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+            </div>
+
+            <div id="footer-projects-vmobile">
+                <div class="page-buttons-vmobile">
+                    <button class="next-button">&#8249;</button>
+                    <button class="page-button">1</button>
+                    <button class="page-button">2</button>
+                    <button class="page-button">3</button>
+                    <button class="page-button">4</button>
+                    <button class="next-button">&#8250;</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
     <footer>
         <div>
             <p>Em Desenvolvimento | Por: Ruan &#169;</p>

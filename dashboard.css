@@ -1,3 +1,12 @@
+/* Desabilitar os itens da versão mobile */
+.html-mobile {
+    display: none;
+}
+
+.html-tablet {
+    display: none;
+}
+
 /* Viewport de propostas e starcoins */
 #container-painel-control {
     display: flex;
@@ -268,8 +277,202 @@
 
 /* Responsividade para pequenas telas */
 @media screen and (max-width: 600px) {
+    /* Desativa os itens da versão para desktop e ativa a versão mobile */
+    .html-mobile {
+        display: block;
+    }
+
+    .html-desktop {
+        display: none;
+    }
+
+    .html-tablet {
+        display: none;
+    }
+
+    div#desktop-menu {
+        display: none;
+    }
+
     main {
         display: flex;
         flex-flow: column wrap;
+    }
+
+    #
+
+    /* Estilo de usuário para telas pequenas */
+    div#container-user {
+        display: flex;
+    }
+
+    div#profile {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    div#saldo-work-vmobile {
+        margin-left: 15px;
+    }
+
+    div#saldo-disp-vmobile {
+        margin-top: 20px;
+
+    }
+
+    /* Estilo da seção de recomendações para pequenas telas */
+    div#container-recommendations-vmobile {
+        display: block;
+        margin-top: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    div#body-projects-vmobile {
+        margin-bottom: 20px;
+    }
+    
+    div#body-projects-vmobile div {
+        background-color: #cdcdcd;
+        padding: 80px;
+        margin-top: 15px;
+    }
+
+    nav#filter-project {
+        background-color: #fff;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    nav#filter-project span {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    /* Desativa os itens da versão para desktop e ativa a versão mobile */
+    .html-mobile {
+        display: none;
+    }
+
+    .html-desktop {
+        display: none;
+    }
+
+    .html-tablet {
+        display: block;
+    }
+
+    #container-painel {
+        display: none;
+    }
+
+    #titlepanel {
+        display: none;
+    }
+
+    #container-painel {
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#desktop-menu {
+        display: none;
+    }
+
+    div#search-box {
+        width: 50%;
+    }
+
+    #container-user {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #saldo-work-vmobile {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .saldo-work-btn {
+        flex: 0 0 auto; /* Mantém o tamanho original do botão */
+        width: 80px; /* Largura fixa (opcional) */
+        height: 40px; /* Altura fixa (opcional) */
+        border: none; /* Sem borda */
+        border-radius: 10px; /* Bordas arredondadas */
+        cursor: pointer; /* Muda o cursor ao passar o mouse */
+        text-align: center;
+    }
+
+    #painel-vmobile {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    #saldo-disp-vmobile {
+        align-items: center;
+        margin-left: 35px;
+    }
+
+    #saldo-disp-vmobile div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-flow: column wrap;
+
+    /* Estilo de usuário para telas pequenas */
+    div#container-user {
+        display: flex;
+    }
+
+    div#profile {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    div#saldo-work-vmobile {
+        margin-left: 25px;
+    }
+
+    div#saldo-disp-vmobile {
+        margin-top: 20px;
+
+    }
+
+    /* Estilo da seção de recomendações para pequenas telas */
+    div#container-recommendations-vmobile {
+        margin-top: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    div#body-projects-vmobile {
+        margin-bottom: 20px;
+    }
+    
+    div#body-projects-vmobile div {
+        background-color: #cdcdcd;
+        padding: 80px;
+        margin-top: 15px;
+    }
+
+    nav#filter-project {
+        background-color: #fff;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    nav#filter-project span {
+        font-size: 20px;
+        padding: 5px;
     }
 }

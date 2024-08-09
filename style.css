@@ -13,8 +13,7 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 div#container-header {
@@ -260,7 +259,7 @@ footer div p {
 }
 
 /* Responsividade para pequenas telas */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     /* Estilo do menu de usuário responsivo */
     div#desktop-tabs {
@@ -269,14 +268,6 @@ footer div p {
 
     div#responsive-tabs {
         display: block;
-    }
-
-    div#desktop-menu {
-        display: none;
-    }
-
-    div#search-box {
-        display: none;
     }
 
     menu#user-menu {
