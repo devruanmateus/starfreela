@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/* Container que armazena o conteúdo */
+#container-content {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* Estilo do título */
+#container-introduction {
+    display: flex;
+}
+
+#container-introduction div {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+#introduction h1 {
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+#introduction p {
+    font-size: 23px;
+    color: gray;
+}
+
+#image-introduction {
+    align-items: center;
+}
+
+#image-introduction img {
+    width: 400px;
+    background-color: #00D7A7;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+/* Seção de objetivo */
+#meta {
+    margin-top: 70px;
+}
+
+#meta p {
+    margin-top: 5px;
+    font-size: 23px;
+    color: gray;
+}
+
+
+/* Responsividade para pequenas telas */
+@media screen and (max-width: 768px) {
+    #desktop-menu {
+        display: none;
+    }
+
+    #container-introduction {
+        flex-flow: column-reverse wrap;
+    }
+
+    #image-introduction {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: baseline;
+        margin-bottom: 15px;
+
+    }
+    
+    #image-introduction img {
+        width: 300px;
+    }
+
+    #introduction {
+        text-align: center;
+    }
+
+    #introduction h1 {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    
+    #introduction p {
+        font-size: 20px;
+        color: gray;
+    }
+    
+    #meta {
+        margin-top: 70px;
+    }
+    
+    #meta h1 {
+        font-size: 24px;
+    }
+    
+    #meta p {
+        margin-top: 15px;
+        font-size: 20px;
+        color: gray;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #image-introduction img {
+        width: 250px;
+    }
+
+    #introduction h1 {
+        margin-bottom: 15px;
+        font-size: 35px;
+    }
+    
+    #introduction p {
+        font-size: 17px;
+        color: gray;
+    }
+    
+    #meta {
+        margin-top: 70px;
+    }
+    
+    #meta h1 {
+        font-size: 24px;
+    }
+    
+    #meta p {
+        margin-top: 15px;
+        font-size: 20px;
+        color: gray;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1180px) {
+    #image-introduction img {
+        width: 300px;
+    }
+
+    #introduction h1 {
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+    
+    #introduction p {
+        font-size: 20px;
+        color: gray;
+    }
+}

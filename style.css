@@ -50,7 +50,7 @@ div#responsive-tabs {
 
 menu#user-menu {
     display: none; 
-    top: 60px;
+    top: 57px;
     position: absolute; 
     background-color: white; 
     border: 1px solid #ccc;
@@ -126,7 +126,7 @@ a.tabs-menu:hover {
 .dropdown-menu {
     position: absolute;
     width: 13em;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-left: 30px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.149);
     background-color: rgba(5, 177, 140, 0.929);
