@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* Estilo do container da central de ajuda */
+#container-helpcenter {
+    display: flex;
+    background-color: #00D7A7;
+    color: #fff;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* Estilo da seção de boas vindas */
+#welcome {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 20px;
+    margin-left: 25px;
+    white-space: nowrap;
+}
+
+/* Posicionamento da imagem */
+#vetor {
+    display: flex;
+    justify-content: flex-end; /* Altere para flex-end para alinhar corretamente a imagem */
+    width: 100%; /* Certifique-se de que o vetor ocupa toda a largura do container */
+}
+
+#vetor img {
+    height: auto;
+    width: 270px;
+}
+
+/* Responsividade para pequenas telas */
+@media screen and (max-width: 768px) {
+    div#desktop-menu {
+        display: none;
+    }
+
+    #vetor {
+        display: none;
+    }
+
+    #welcome {
+        font-size: 12px;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    #welcome {
+        font-size: 16px;
+    }
+}
