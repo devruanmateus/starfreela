@@ -17,7 +17,7 @@
     display: flex;
     flex-flow: column wrap;
     background-color: #fff;
-    border: 1px solid #000000;
+    border: 1px solid #00000025;
     padding: 30px;
 }
 
@@ -97,6 +97,10 @@
 #cliente {
     display: flex;
     align-items: center;
+}
+
+#cliente span {
+    font-size: 30px;
 }
 
 #cliente h5 {

@@ -1,6 +1,6 @@
 /* Área de configurar o status */
 #stats {
-    border: 1px solid black;
+    border: 1px solid #00000025;
     background-color: #fff;
     padding: 25px;
 }
@@ -104,11 +104,26 @@
 
 #info-cliente p {
     position: absolute;
-    margin-right: 40px;
+    margin-right: 32px;
     font-size: 14px;
 }
 
-#info-client img {
-    position: relative;
-    float: right;
+#info-client span {
+    font-size: 30px;
+}
+
+/* Responsividade para pequenas telas */
+@media screen and (max-width: 992px) {
+    #desktop-menu {
+        display: none;
+    }
+
+    #config-container {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #projects-view-container {
+        margin: 0;
+    }
 }

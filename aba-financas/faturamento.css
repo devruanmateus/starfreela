@@ -12,23 +12,26 @@
 }
 
 #filter-faturamento {
+    width: 35%;
     display: flex;
     flex-flow: row wrap;
-    width: 350px;
-    margin-right: 85px;
-    border: 1px solid #000000;
+    margin-right: 20px;
+    border: 1px solid #00000025;
     background-color: #fff;
     padding: 20px;
     justify-content: center;
-    height: 250px; 
 }
 
 #data, #tipo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
     flex-wrap: wrap;
+    margin-top: 10;
+}
+
+#tipo {
+    margin-top: 20px;
 }
 
 #data > h5, #tipo > h5 {
@@ -84,20 +87,108 @@ table thead th {
 
 td {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
     font-size: 13.9px;
     height: 100px;
 }
 
-#data-de-realizacao {
+.info-project {
     white-space: normal;
     word-wrap: break-word;
+}
+
+#customer {
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+#customer span {
+    margin-right: 5px;
+}
+
+#data-de-realizacao {
+    white-space: normal;
+    word-wrap: normal;
 }
 
 /* Efeito zebrado na tabela */
 table tbody > tr:nth-child(odd) {
     background-color: rgba(208, 208, 208, 0.334);
+}
+
+/* Responsividade para pequenas telas */
+@media screen and (max-width: 768px) {
+    div#filter-faturamento {
+        width: 100%;
+    }
+
+    div#desktop-menu {
+        display: none;
+    }
+
+    div#container-filter-faturamento {
+        flex-flow: column wrap;
+    }
+
+    div#table-container {
+        overflow-x: auto;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
+    div#table-container thead {
+        display: none;
+    }
+
+    table tr {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 15px;
+    }
+
+    td#data-de-realizacao {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    td#amount-received {
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        background-color: #00D7A7;
+        border-radius: 10px;
+        color: #fff;
+        padding: 5px;
+        width: 110px;
+        margin-left: 10px;
+        margin-top: 5px;
+        justify-content: center;
+    }
+
+    table td {
+        height: auto;
+        border: 0;
+    }
+
+    .info-project {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .info-project span {
+        margin-right: 5px;
+    }
+
+    td#customer br {
+        display: none;
+    }
+
+    td#customer {
+        display: flex;
+        align-items: center;
+    }
 }

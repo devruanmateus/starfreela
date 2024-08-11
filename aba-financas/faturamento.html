@@ -9,25 +9,96 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <!-- A tag <header> representa o cabeçário  -->
     <header>
+        <!-- Container que armazena os elementos -->
         <div id="container-header">
-            <div id="user"><img src="../imagens/foto-de-perfil.png" alt=""></div>       
-            <div id="msg"><img src="../imagens/mensagem.png" alt=""></div>
-            <div id="notify"><img src="../imagens/notificar.png" alt=""></div>
-            <div id="menu">
+            <!-- Icones interativos -->
+            <div id="interactive-icons">
+                <span onclick="openMenuUser()" id="user" class="material-symbols-outlined">person</span>       
+                <span id="msg" class="material-symbols-outlined">chat</span>
+                <span id="notify" class="material-symbols-outlined">notifications</span>
+                <menu id="user-menu">
+                    <ul>
+                        <li>
+                            <div id="desktop-tabs">
+                                <h4>Configurações da conta</h4>
+                                <div class="tabs">
+                                    <a href="">Minha conta</a>
+                                    <a href="">Plano de assinatura</a>
+                                    <a href="">Meu perfil</a>
+                                </div>
+
+                                <h4>Contratar</h4>
+                                <div class="tabs">
+                                    <a href="">Contratar freelancers</a>
+                                    <a href="">Publicar um projeto</a>
+                                </div>
+                            </div>
+
+                            <div id="responsive-tabs">
+                                <h4>Configurações da conta</h4>
+                                <ul>
+                                    <li>
+                                        <div class="tabs">
+                                            <a href="">Minha conta</a>
+                                            <a href="">Plano de assinatura</a>
+                                            <a href="">Meu perfil</a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <h4>Projetos</h4>
+                                <ul>
+                                    <li>
+                                        <div class="tabs">
+                                            <a href="">Buscar projetos</a>
+                                            <a href="">Gerenciar projetos</a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <h4>Finanças</h4>
+                                <ul>
+                                    <li>
+                                        <div class="tabs">
+                                            <a href="">Transações</a>
+                                            <a href="">Opções de pagamento</a>
+                                            <a href="">Cartões de crédito</a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <h4>Ajuda</h4>
+                                <ul>
+                                    <li>
+                                        <div class="tabs">
+                                            <a href="">Central de ajuda</a>
+                                            <a href="">Sobre nós</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </menu>
+            </div>
+
+            <div id="desktop-menu">
+                <!-- Menu que permite navegar para outras páginas do site -->
                 <nav>
                     <ul>
                         <li class="dropdown">
-                            <a href="#" id="menu-projetos" class="menu-a">Projetos</a>
+                            <a href="#" class="tabs-menu">Projetos</a>
 
                             <div class="dropdown-menu">
-                                <a href="../aba-projetos/buscar-projetos.html">Buscar projetos</a>
-                                <a href="../aba-projetos/gerenciarprojetos.html">Gerenciar projetos</a>
+                                <a href="/aba-projetos/buscar-projetos.html">Buscar projetos</a>
+                                <a href="/aba-projetos/gerenciarprojetos.html">Gerenciar projetos</a>
                             </div>
                         </li>
 
                         <li class="dropdown">
-                            <a href="#"  id="menu-financas" class="menu-a">Finanças</a>
+                            <a href="#" class="tabs-menu">Finanças</a>
 
                             <div class="dropdown-menu">
                                 <a href="#">Faturamento</a>
@@ -38,7 +109,7 @@
                         </li>
 
                         <li class="dropdown">
-                            <a href="#" class="menu-a">Ajuda</a>
+                            <a href="#" class="tabs-menu">Ajuda</a>
 
                             <div class="dropdown-menu">
                                 <a href="#">Guias</a>
@@ -50,14 +121,7 @@
                 </nav>
             </div>
 
-            <div id="search-box">
-                <input type="text" id="search-txt" placeholder="Pesquisar">
-                <a href="#" id="search-btn">
-                    <img src="../imagens/arrow-down.png" alt="Lupa" height="10" width="10" style="margin-right: 5px;">
-                </a>
-            </div>
-
-            <div id="logo">
+            <div id="logotipo">
                 <h1>Starfreela</h1>
             </div>
         </div>
@@ -90,26 +154,25 @@
                     <tbody>
                         <tr>
                             <td id="data-de-realizacao">21 de Jul de 2024</td>
-                            <td>Saque/Recebimentos</td>
-                            <td>Nome do cliente</td>
-                            <td>Nome do projeto</td>
-                            <td>+ R$ 75,00</td>
+                            <td>Saque/Recebimento</td>
+                            <td  id="customer" class="info-project"><span class="material-symbols-outlined">face</span><br> Cliente</td>
+                            <td class="info-project">Nome do projeto</td>
+                            <td id="amount-received">+ R$ 75,00</td>
                         </tr>
                         <tr>
                             <td id="data-de-realizacao">21 de Jul de 2024</td>
-                            <td>Saque/Recebimentos</td>
-                            <td>Nome do cliente</td>
-                            <td>Nome do projeto</td>
-                            <td>+ R$ 75,00</td>
+                            <td>Saque/Recebimento</td>
+                            <td id="customer" class="info-project"><span class="material-symbols-outlined">face</span><br> Cliente</td>
+                            <td class="info-project">Nome do projeto</td>
+                            <td id="amount-received">+ R$ 75,00</td>
                         </tr>
                         <tr>
                             <td id="data-de-realizacao">21 de Jul de 2024</td>
-                            <td>Saque/Recebimentos</td>
-                            <td>Nome do cliente</td>
-                            <td>Nome do projeto</td>
-                            <td>+ R$ 75,00</td>
+                            <td>Saque/Recebimento</td>
+                            <td  id="customer" class="info-project"><span class="material-symbols-outlined">face</span><br> Cliente</td>
+                            <td class="info-project">Nome do projeto</td>
+                            <td id="amount-received">+ R$ 75,00</td>
                         </tr>
-                        
                     </tbody>
                 </table>
             </div>
