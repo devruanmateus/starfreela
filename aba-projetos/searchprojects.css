@@ -13,12 +13,13 @@
     background-color: #e0e0e0;
 }
 
-#filtro-container {
+#filter-container {
     display: flex;
     flex-flow: column wrap;
     background-color: #fff;
     border: 1px solid #00000025;
     padding: 30px;
+    height: 500px;
 }
 
 #categorias, #modalidades {
@@ -32,9 +33,18 @@
     font-size: 13px;
 }
 
+#categorias select {
+    padding: 5px;
+}
+
+#categories {
+    padding: 10px;
+}
+
 #modalidades select, #idioma select {
     border-radius: 7px;
     margin-top: 7px;
+    padding: 5px;
 }
 
 /* Publicações de projetos */
@@ -110,6 +120,10 @@
 
 /* Responsividade para pequenas telas */
 @media screen and (max-width: 868px) {
+    #filter-container {
+        height: auto;
+    }
+
     .html-desktop {
         display: none;
     }

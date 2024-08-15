@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 #menu-financas {
     background-color: #01bd94;
 }
@@ -12,7 +14,7 @@
 }
 
 #filter-faturamento {
-    width: 35%;
+    width: 30%;
     display: flex;
     flex-flow: row wrap;
     margin-right: 20px;
@@ -35,7 +37,7 @@
 }
 
 #data > h5, #tipo > h5 {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     width: 100%;
 }
 
@@ -163,7 +165,6 @@ table tbody > tr:nth-child(odd) {
         color: #fff;
         padding: 5px;
         width: 110px;
-        margin-left: 10px;
         margin-top: 5px;
         justify-content: center;
     }

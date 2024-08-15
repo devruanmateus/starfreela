@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Configurações do menu */
 #menu-financas {
     background-color: #01bd94;
@@ -10,4 +12,11 @@
 /* Estilo da área de pagamentos */
 div#payhead h1 {
     margin-bottom: 20px;
+}
+
+/* Responsividade para pequenas telas */
+@media screen and (max-width: 768px) {
+    #desktop-menu {
+        display: none;
+    }
 }
